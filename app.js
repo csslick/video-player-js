@@ -28,6 +28,7 @@ function stop_vid() {
   video.pause();
   timerOff();
   video.currentTime = 0;
+  bar.value = (video.currentTime / duration) * 100;
 }
 
 function timerOn() {
