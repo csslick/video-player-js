@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Video Player</title>
+  <script src="app.js" defer></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <figure>
+    <video src="video.mp4" id="video" onloadeddata="loadedData()"></video>
+  </figure>
+  <div class="controls">
+    <div class="bar"><progress min="0" max="100" value="0"></progress></div>
+    <button id="play" onclick="play_vid()">Play</button>
+    <button id="pause" onclick="pause_vid()">Pause</button>
+    <button id="stop" onclick="stop_vid()">Stop</button>
+  </div>
+</body>
+</html>
